@@ -1,11 +1,11 @@
 /*
-Author:
-Date:
-File Name: 
+Author:Lizeth Hernandez
+Date: April 04 2022
+File Name: applySheet.css
 */
 
 /* CSS Reset */
-body, main, footer, table {
+body, main, footer, table, th, {
     margin: 0;
     padding: 0;
     border: 0;
@@ -26,4 +26,36 @@ body {
 footer {
 	font-size: .70em;
 	text-align: center;
+}
+/*styles the table*/
+table{
+  border: 3px solid #71881b;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/*creates the division for the cells*/
+table,tr,th,td{
+border-collapse:collapse;
+padding: 2%;
+}
+/*makes the caption more noticibel*/
+caption{
+  font-size: 2em;
+  padding: 2%;
+  margin-top: 2%;
+}
+/*creates th lines */
+th,td{
+  border: 1px solid #7188bb;
+}
+/*Centers the text in al cells*/
+td{
+  text-align: center;
+}
+/*creates the backgroundcolor for the cells*/
+tr{
+  background-color: #d3e788;
 }
