@@ -1,0 +1,72 @@
+/*
+Author:Lizeth Hernandez
+Date: April 04 2022
+File Name: applySheet.css
+*/
+
+/* CSS Reset */
+body, main, footer, table, th, {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #ffe5dc;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+/*styles the table*/
+table{
+  border: 3px solid #fd4d0c;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: #792101;
+}
+/*creates the division for the cells*/
+table,tr,th,td{
+border-collapse:collapse;
+padding: 2%;
+}
+/*makes the caption more noticibel*/
+caption{
+  font-size: 2em;
+  padding: 2%;
+  margin-top: 2%;
+  color:#a22c02;
+}
+/*creates th lines */
+th,td{
+  border: 1px solid #a22c02;
+}
+/*Centers the text in al cells*/
+td{
+  text-align: center;
+}
+/*creates the backgroundcolor for the cells*/
+tr{
+  background-color: #ffffff;
+}
+tr:nth-child(odd) {
+  background-color: #fe9772;
+}
+th{
+  background-color: #a22c02;
+  color:#ffffff;
+  border: 1px solid #fe9772;
+}

@@ -146,6 +146,38 @@ main p {
   width: 95%;
   height:50%;
 }
+/*Table */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+/*styles the table*/
+table{
+  border: 1px solid #373684;
+  border-collapse: collapse;
+  margin:0 auto;
+  width: 100%;
+}
+/*makes the caption more noticibel*/
+caption{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+/*creates th lines */
+th,td{
+  border: 1px solid #373684;
+  padding: 2%;
+}
+/*creates the backgroundcolor for the cells*/
+tr:nth-child(odd) {
+  background-color: #b7b7e1;
+}
+th{
+  background-color: #373684;
+  color:#fff;
+font-size: 1.15em;
+}
 
 
 

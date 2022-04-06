@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author:Lizeth Hernandez
+Date:April 2022
+File Name: Analyze.css
 */
 
 /* Style for body specifies a background color */
@@ -18,15 +18,64 @@ body {
 
 /* Style rules for form elements */
 
-
 /* Style for the footer element */
 footer {
 	font-size: .9em;
 	text-align: center;
 }
 
-/* Media query for tablet layout */ 
-@media only screen and (min-width: 600px) {
+/* Media query for mobile layout */
+@media only screen and (max-width: 600px) {
+fieldset, input{
+	margin-bottom: 2%;
+}
 
-    
+fieldset legend{
+	font-size: 1.25em;
+	font: bold;
+}
+
+.btn{
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
+}
+/* Media query for tablet layout */
+@media only screen and (min-width: 601px) {
+form{
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+}
+.btn{
+	grid-column: 1 / span 2;
+	padding: 3%;
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
 }
