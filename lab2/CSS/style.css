@@ -27,7 +27,7 @@ h3{
   font-family: 'Lora', serif;
 }
 /*Style rule for the show mobile class and hide tab-desk class*/
-.mobile{
+.mobile-tablet{
   display: block;
   padding: 2%;
   text-align: center;
@@ -35,6 +35,10 @@ h3{
 .tab-desk{
   visibility: hidden;
 }
+.desktop{
+
+}
+
 /*style rules for header area*/
 
 
@@ -137,6 +141,9 @@ figcaption{
 #contact{
   text-align: center;
 }
+#form{
+
+}
 
 .tel-link-round{
   background-color: #2a1f14;
@@ -150,6 +157,30 @@ figcaption{
     border-radius: 5px;
     display:block;
     font-size: 1.5em;
+}
+/*Style rules for form elements*/
+fieldset,input,textarea{
+  margin-bottom: 2%;
+}
+legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+label{
+  display: block;
+  padding-top: 2%;
+}
+#submit{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  padding: 2%;
+  background-color: #78593a;
+  color:#f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
 }
 /*style rule for footer content*/
 footer{
@@ -190,6 +221,14 @@ nav li{
 aside{
   grid-columns: 1 / span 2;
 }
+/*tablet viewport: styele rule for form element*/
+form{
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 /* Media Query for large Desktop Viewports */
@@ -225,7 +264,10 @@ aside{
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
-/*Desktop viewport: style rule for nav area*/
+/*Desktop viewport:*/
+.mobile-tablet{
+  display: none;
+}
 nav li{
   font-size: 1.5em;
 }
@@ -247,6 +289,44 @@ nav li a:hover{
 aside{
   grid-column: 1 / span 3;
   font-size: 2em;
+}
+/*Style rules for table*/
+table{
+  border:1px solid #2a1f14;
+  border: collapse;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+th,td{
+  border: 1px solid #2a1f14;
+  padding: 1%;
+}
+th{
+  background-color: #2a1f14;
+  color:#fff;
+  font-size: 1.15em;
+}
+tr{
+  background-color(odd): #deccba;
+}
+/*Desktop viewport: style rules for form elements*/
+form{
+  width: auto;
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+}
+.btn{
+  grid-column: 1 /span 2;
 }
 /*desktop viewport: style rule for main content*/
 #info ul{

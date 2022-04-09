@@ -146,6 +146,14 @@ main p {
   width: 95%;
   height:50%;
 }
+/*Tabelt viewport: style rule for form element*/
+form{
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*Table */
 #container {
 	width: 80%;
@@ -178,7 +186,7 @@ th{
   color:#fff;
 font-size: 1.15em;
 }
-
+/*Style rule for form elemnts*/
 
 
 /*Style rules for footer content*/
@@ -192,6 +200,33 @@ footer a{
   color:#4645a8;
   text-decoration: none;
 }
+/*media query for mobile*/
+@media screen and (max-width: 600px), print {
+  fieldset{
+    margin-bottom: 2%;
+  }
+  input{
+    margin-bottom: 2%;
+  }
+  legend{
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  label{
+    display:block;
+    padding-top: 3%;
+  }
+  #submit{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+  }
+}
 /*media query for tablet*/
 @media screen and (min-width: 650px), print {
 .grid{
@@ -202,6 +237,8 @@ footer a{
 aside{
   grid-column: 1 / span 2;
 }
+/*tabelt viewport: styel rule for form elemnt*/
+
 }
 
 /* Media Query for Desktop Viewport */
@@ -215,5 +252,18 @@ aside{
 }
 figcaption{
   font-size: 1em;
+}
+/*Desktop Viewport: style rule for table*/
+table{
+  width: 70%;
+}
+/*Desktop viewport: style rule for form elements*/
+form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+}
+.btn{
+  grid-column: 1 / span 2;
 }
 }
